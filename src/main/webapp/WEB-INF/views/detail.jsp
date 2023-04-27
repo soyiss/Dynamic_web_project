@@ -11,54 +11,54 @@
     <title>Title</title>
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <script src="/resources/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .header{
-            background-color: #0a53be;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-        .nav{
-            background-color: #648fce;
-        }
-        ul{
-            /* 목록 기호 없애기 */
-            list-style-type: none;
-            /* 자식요소들에게 float가 적용되어 있을 때는
-            부모 높이가 사라지는 현상이 생김 이럴땐 아래와 같이 속성을 준다 */
-            overflow: hidden;
+<%--    <style>--%>
+<%--        .header{--%>
+<%--            background-color: #0a53be;--%>
+<%--            color: white;--%>
+<%--            text-align: center;--%>
+<%--            padding: 25px;--%>
+<%--        }--%>
+<%--        .nav{--%>
+<%--            background-color: #648fce;--%>
+<%--        }--%>
+<%--        ul{--%>
+<%--            /* 목록 기호 없애기 */--%>
+<%--            list-style-type: none;--%>
+<%--            /* 자식요소들에게 float가 적용되어 있을 때는--%>
+<%--            부모 높이가 사라지는 현상이 생김 이럴땐 아래와 같이 속성을 준다 */--%>
+<%--            overflow: hidden;--%>
 
-        }
-        li{
-            /* li 요소를 한줄로 */
-            float: left;
-        }
-        li a{
-            display: inline-block;
-            padding: 15px 15px;
-            /* a태그에 적용된 밑줄 없애기 */
-            text-decoration: none;
-            color: white;
-        }
+<%--        }--%>
+<%--        li{--%>
+<%--            /* li 요소를 한줄로 */--%>
+<%--            float: left;--%>
+<%--        }--%>
+<%--        li a{--%>
+<%--            display: inline-block;--%>
+<%--            padding: 15px 15px;--%>
+<%--            /* a태그에 적용된 밑줄 없애기 */--%>
+<%--            text-decoration: none;--%>
+<%--            color: white;--%>
+<%--        }--%>
 
-        li a:hover{
-            background-color: rgb(56, 68, 67);
-            color: rgb(250, 251, 253);
-        }
-        .section{
-            background-color: #dcdcdc;
-            color: black;
-            height: 500px;
-            text-align: center;
-        }
+<%--        li a:hover{--%>
+<%--            background-color: rgb(56, 68, 67);--%>
+<%--            color: rgb(250, 251, 253);--%>
+<%--        }--%>
+<%--        .section{--%>
+<%--            background-color: #dcdcdc;--%>
+<%--            color: black;--%>
+<%--            height: 500px;--%>
+<%--            text-align: center;--%>
+<%--        }--%>
 
-        .footer{
-            background-color: #719ddc;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+<%--        .footer{--%>
+<%--            background-color: #719ddc;--%>
+<%--            color: white;--%>
+<%--            text-align: center;--%>
+<%--            padding: 15px;--%>
+<%--        }--%>
+<%--    </style>--%>
 </head>
 <body>
 <div class="header">

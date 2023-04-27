@@ -13,21 +13,12 @@ public class MemberService {
     @Autowired
     private MemberRepository memberRepository;
 
-    public int save(MemberDTO memberDTO){
-        int result = memberRepository.save(memberDTO);
-        return result;
-
+    public boolean save(MemberDTO memberDTO) {
+       return memberRepository.save(memberDTO);
     }
 
-
     public List<MemberDTO> findAll() {
-        List<MemberDTO>memberDTOList = memberRepository.findAll();
-        if(memberDTOList.size() == 0){
-            return null;
-        }else{
-            return memberDTOList;
-        }
-
+        return memberRepository.findAll();
     }
 
     public MemberDTO findById(Long custno) {
@@ -37,7 +28,6 @@ public class MemberService {
     public void update(MemberDTO memberDTO) {
         memberRepository.update(memberDTO);
     }
-
 
     public void delete(Long custno) {
         memberRepository.delete(custno);

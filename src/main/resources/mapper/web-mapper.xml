@@ -19,7 +19,7 @@
     </select>
 
     <update id="update" parameterType="member">
-        update member_table set custname=#{custname},phone=#{phone},address=#{address},joindate=#{joindate},grade=#{grade},city=#{city}
+        update member_table set phone=#{phone},address=#{address},grade=#{grade},city=#{city}
                 where custno=#{custno}
     </update>
 

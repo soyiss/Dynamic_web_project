@@ -12,9 +12,15 @@ public class MemberRepository {
     @Autowired
     private SqlSessionTemplate sql;
 
-    public int save(MemberDTO memberDTO) {
+    public boolean save(MemberDTO memberDTO) {
+        try{
+            sql.insert("Member.save",memberDTO);
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            return false;
 
-        return sql.insert("Member.save",memberDTO);
+        }
     }
 
     public List<MemberDTO> findAll() {
