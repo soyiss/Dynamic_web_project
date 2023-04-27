@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="Member">
+    <insert id="save" parameterType="com.icia.web.dto.MemberDTO">
+        insert into member_table(custname, phone, address,joindate,grade,city)
+        values (#{custname},#{phone},#{address},#{joindate},#{grade},#{city})
+    </insert>
+
+    <select id="findAll" resultType="com.icia.web.dto.MemberDTO">
+        -- 세미클론 쓰면 안됨!
+        select * from member_table
+    </select>
+
+    <select id="findById" parameterType="Long" resultType="member">
+        select * from member_table where custno = #{custno}
+    </select>
+
+    <update id="update" parameterType="member">
+        update member_table set custname=#{custname},phone=#{phone},address=#{address},joindate=#{joindate},grade=#{grade},city=#{city}
+                where custno=#{custno}
+    </update>
+
+    <delete id="delete" parameterType="Long" >
+        delete from member_table where custno=#{custno}
+    </delete>
+</mapper>
